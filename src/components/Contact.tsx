@@ -36,7 +36,7 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="py-20 px-4 bg-white dark:bg-slate-900 w-full">
+    <section id="contact" className="section-padding section-bg-light w-full">
       <div className="contact-container">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -45,11 +45,11 @@ export default function Contact() {
           viewport={{ once: true }}
           className="text-center mb-12 w-full"
         >
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+          <h2 className="heading-xl">
             Conectemos
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full mb-6"></div>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          <div className="divider-gradient-small"></div>
+          <p className="text-body-medium max-w-2xl mx-auto leading-relaxed">
             ¿Tienes un proyecto en mente? Me encantaría escuchar sobre él y ver cómo puedo ayudarte a hacerlo realidad.
           </p>
         </motion.div>
@@ -93,25 +93,25 @@ export default function Contact() {
           className="text-center w-full"
         >
           <div className="bg-gradient-to-r from-gray-50 to-blue-50 dark:from-slate-800 dark:to-slate-700 rounded-2xl p-10 shadow-lg w-full">
-            <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+            <h3 className="heading-2xl">
               Disponible para nuevos proyectos
             </h3>
-            <p className="text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed text-lg">
+            <p className="text-body-large mb-8 max-w-2xl mx-auto leading-relaxed">
               Actualmente estoy disponible para proyectos freelance y oportunidades de colaboración. 
               Si tienes una idea interesante o necesitas ayuda con tu proyecto, no dudes en contactarme.
             </p>
             
             <div className="flex flex-wrap justify-center gap-8 text-sm text-gray-500 dark:text-gray-400">
               <div className="flex items-center gap-3">
-                <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                <div className="status-dot-green"></div>
                 <span className="font-medium">Disponible para proyectos</span>
               </div>
               <div className="flex items-center gap-3">
-                <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+                <div className="status-dot-blue"></div>
                 <span className="font-medium">Respuesta en 24h</span>
               </div>
               <div className="flex items-center gap-3">
-                <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
+                <div className="status-dot-purple"></div>
                 <span className="font-medium">Presupuestos gratuitos</span>
               </div>
             </div>

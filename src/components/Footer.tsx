@@ -25,7 +25,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-gray-900 dark:bg-black text-white py-16 px-4 w-full">
+    <footer className="section-padding section-bg-dark text-white w-full">
       <div className="footer-container">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -36,10 +36,10 @@ export default function Footer() {
         >
           {/* Logo/Nombre */}
           <div className="mb-10 w-full">
-            <h3 className="text-3xl font-bold text-white mb-3">
+            <h3 className="heading-2xl text-white">
               Enrique Manterola
             </h3>
-            <p className="text-gray-400 text-lg">
+            <p className="text-caption">
               Full Stack Developer
             </p>
           </div>
@@ -57,9 +57,9 @@ export default function Footer() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.1, y: -2 }}
-                className="p-3 bg-gray-800 hover:bg-gray-700 rounded-lg transition-all duration-300 group"
+                className="icon-social group"
               >
-                <link.icon size={22} className="text-gray-300 group-hover:text-white transition-colors duration-300" />
+                <link.icon size={22} />
               </motion.a>
             ))}
           </div>
@@ -97,11 +97,11 @@ export default function Footer() {
 
           {/* Copyright */}
           <div className="flex flex-col md:flex-row justify-center items-center gap-4 w-full">
-            <p className="text-gray-400 text-sm">
+            <p className="text-caption-small">
               © {currentYear} Enrique Manterola. Todos los derechos reservados.
             </p>
             
-            <div className="flex items-center gap-2 text-gray-400 text-sm">
+            <div className="flex items-center gap-2 text-caption-small">
               <span>Hecho con</span>
               <motion.div
                 animate={{ scale: [1, 1.2, 1] }}

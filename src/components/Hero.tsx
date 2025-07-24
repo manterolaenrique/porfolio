@@ -23,7 +23,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 py-16 relative overflow-hidden">
+    <section className="min-h-screen flex-center px-4 py-16 relative overflow-hidden">
       {/* Fondo con gradiente y elementos decorativos */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-indigo-50 dark:from-slate-900 dark:via-slate-800 dark:to-blue-900"></div>
       
@@ -33,20 +33,20 @@ export default function Hero() {
       <div className="absolute -bottom-8 left-20 w-72 h-72 bg-pink-200 dark:bg-pink-800 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
 
       <div className="container mx-auto max-w-6xl relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid-2-cols">
           {/* Contenido de texto */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="space-y-6 text-center lg:text-left"
+            className="space-y-large text-center lg:text-left"
           >
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-4">
+              <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-small">
                 Enrique{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">
                   Manterola
@@ -59,10 +59,10 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              <h2 className="text-2xl lg:text-3xl font-semibold text-gray-700 dark:text-gray-300 mb-4">
+              <h2 className="heading-3xl">
                 Full Stack Developer
               </h2>
-              <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
+              <p className="text-body-medium mb-medium">
                 Angular, React & Node.js
               </p>
             </motion.div>
@@ -72,7 +72,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-lg">
+              <p className="text-body-medium leading-relaxed max-w-lg">
                 Apasionado por crear soluciones digitales eficientes y escalables.
               </p>
             </motion.div>
@@ -108,7 +108,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.0 }}
-              className="social-buttons-section mt-8"
+              className="social-buttons-section mt-medium"
             >
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-8">
                 <button
@@ -135,7 +135,7 @@ export default function Hero() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="flex justify-center"
+            className="flex-center"
           >
             <motion.div
               whileHover={{ scale: 1.05 }}

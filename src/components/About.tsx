@@ -20,7 +20,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-large"
         >
           <h2 className="heading-xl">
             Sobre mí
@@ -28,14 +28,14 @@ export default function About() {
           <div className="divider-gradient"></div>
         </motion.div>
 
-        <div className="grid lg:grid-cols-5 gap-12 items-start">
+        <div className="grid-5-cols">
           {/* Texto descriptivo */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
-            className="space-y-6 lg:col-span-3"
+            className="space-y-large lg:col-span-3"
           >
             <p className="text-body-large">
              Soy Enrique Manterola y soy un apasionado de la resolución de problemas y me mantengo actualizado con las últimas tendencias y tecnologías en el campo del desarrollo full stack.
@@ -74,7 +74,7 @@ export default function About() {
                 className="btn-md btn-width-md"
               >
                 <div className="flex items-center gap-4">
-                  <div className="p-3 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg">
+                  <div className="icon-primary">
                     <skill.icon className="w-6 h-6 text-white" />
                   </div>
                   <div>

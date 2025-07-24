@@ -36,7 +36,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-32 px-8 bg-gray-50 dark:bg-slate-800">
+    <section id="projects" className="section-padding section-bg-gray">
       <div className="projects-container">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -45,16 +45,16 @@ export default function Projects() {
           viewport={{ once: true, margin: "-100px" }}
           className="text-center mb-32"
         >
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-8">
+          <h2 className="heading-xl">
             Proyectos Destacados
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full mb-12"></div>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-16">
+          <div className="divider-gradient-large"></div>
+          <p className="text-body-medium max-w-2xl mx-auto mb-16">
             Una muestra de mis proyectos más recientes y destacados
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 justify-items-center mb-32">
+        <div className="grid-3-cols mb-32">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
@@ -63,7 +63,7 @@ export default function Projects() {
               transition={{ duration: 1.2, delay: index * 0.4 }}
               viewport={{ once: true, margin: "-50px" }}
               whileHover={{ y: -15, scale: 1.02 }}
-              className="bg-white dark:bg-slate-900 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden group w-full max-w-sm"
+              className="card w-full max-w-sm"
             >
               {/* Imagen del proyecto */}
               <div className="relative h-48 bg-gradient-to-br from-blue-400 to-purple-600 overflow-hidden">
@@ -100,21 +100,21 @@ export default function Projects() {
               </div>
 
               {/* Contenido */}
-              <div className="p-8">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
+              <div className="card-content-large">
+                <h3 className="heading-4xl">
                   {project.title}
                 </h3>
                 
-                <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                <p className="text-body-large mb-6">
                   {project.description}
                 </p>
 
                 {/* Tecnologías */}
-                <div className="flex flex-wrap gap-3 mb-8">
+                <div className="tech-container-large">
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full font-medium"
+                      className="tech-tag"
                     >
                       {tech}
                     </span>

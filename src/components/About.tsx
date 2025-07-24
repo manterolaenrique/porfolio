@@ -13,7 +13,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-32 px-8 bg-white dark:bg-slate-900">
+    <section id="about" className="section-padding-large section-bg-light">
       <div className="about-container">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -22,10 +22,10 @@ export default function About() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+          <h2 className="heading-xl">
             Sobre mí
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
+          <div className="divider-gradient"></div>
         </motion.div>
 
         <div className="grid lg:grid-cols-5 gap-12 items-start">
@@ -37,17 +37,17 @@ export default function About() {
             viewport={{ once: true }}
             className="space-y-6 lg:col-span-3"
           >
-            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+            <p className="text-body-large">
              Soy Enrique Manterola y soy un apasionado de la resolución de problemas y me mantengo actualizado con las últimas tendencias y tecnologías en el campo del desarrollo full stack.
              Estoy comprometido con la entrega de soluciones de alta calidad, escalables y seguras, y disfruto trabajando en proyectos desafiantes que me permitan seguir 
              creciendo profesionalmente.
             </p>
             
-            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+            <p className="text-body-large">
              En el lado del cliente, tengo experiencia en el uso de frameworks y librerías populares como Angular para desarrollar aplicaciones modernas con una excelente 
              experiencia de usuario.
             </p>
-            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+            <p className="text-body-large">
             En cuanto al lado del servidor, tengo experiencia en el desarrollo de APIs y servicios web utilizando tecnologías como Node.js, NestJS, Express, entre otras. También tengo conocimientos sólidos en 
             bases de datos relacionales y no relacionales, como MySQL, PostgreSQL, MongoDB, DynamoDB, lo que me permite diseñar y gestionar eficientemente la persistencia de datos en mis aplicaciones.
             Estoy en búsqueda de nuevas oportunidades para integrarme a un equipo de tecnologías de la información en una empresa donde pueda expandir y perfeccionar mis habilidades, 
@@ -78,10 +78,10 @@ export default function About() {
                     <skill.icon className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1">
+                    <h3 className="heading-4xl">
                       {skill.name}
                     </h3>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                    <p className="text-body-small">
                       {skill.description}
                     </p>
                   </div>

@@ -295,6 +295,78 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 160px;
 }
 
+/* ===== CLASES DE TÍTULOS ===== */
+.heading-xl {
+  @apply text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6;
+}
+
+.heading-2xl {
+  @apply text-3xl font-bold text-gray-900 dark:text-white mb-3;
+}
+
+.heading-3xl {
+  @apply text-2xl lg:text-3xl font-semibold text-gray-700 dark:text-gray-300 mb-4;
+}
+
+.heading-4xl {
+  @apply text-xl font-bold text-gray-900 dark:text-white mb-3;
+}
+
+/* ===== CLASES DE TEXTO ===== */
+.text-body-large {
+  @apply text-lg text-gray-600 dark:text-gray-300 leading-relaxed;
+}
+
+.text-body-medium {
+  @apply text-xl text-gray-600 dark:text-gray-400 leading-relaxed;
+}
+
+.text-body-small {
+  @apply text-sm text-gray-600 dark:text-gray-400;
+}
+
+.text-caption {
+  @apply text-gray-400 text-lg;
+}
+
+.text-caption-small {
+  @apply text-gray-400 text-sm;
+}
+
+/* ===== CLASES DE SEPARADORES ===== */
+.divider-gradient {
+  @apply w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full;
+}
+
+.divider-gradient-large {
+  @apply w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full mb-8;
+}
+
+.divider-gradient-small {
+  @apply w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full mb-6;
+}
+
+/* ===== CLASES DE SECCIONES ===== */
+.section-padding {
+  @apply py-20 px-4;
+}
+
+.section-padding-large {
+  @apply py-32 px-8;
+}
+
+.section-bg-light {
+  @apply bg-white dark:bg-slate-900;
+}
+
+.section-bg-gray {
+  @apply bg-gray-50 dark:bg-slate-800;
+}
+
+.section-bg-dark {
+  @apply bg-gray-900 dark:bg-black;
+}
+
 /* Scrollbar personalizada */
 ::-webkit-scrollbar {
   width: 8px;

@@ -23,7 +23,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="min-h-screen flex-center px-4 py-16 relative overflow-hidden">
+    <section id="inicio" className="min-h-screen flex-center px-4 py-16 relative overflow-hidden section-with-navbar">
       {/* Fondo con gradiente y elementos decorativos */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-indigo-50 dark:from-slate-900 dark:via-slate-800 dark:to-blue-900"></div>
       

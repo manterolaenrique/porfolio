@@ -29,7 +29,7 @@ export default function Projects() {
       description: 'Portfolio profesional moderno y atractivo construido con Next.js, React, TailwindCSS y Framer Motion. Incluye diseño responsivo, animaciones suaves y optimización SEO.',
       technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
       image: '/porfolio.png',
-      liveUrl: '#', // Placeholder hasta tener el link de Vercel
+      liveUrl: 'https://porfolio-lilac-seven.vercel.app/', 
       githubUrl: 'https://github.com/manterolaenrique/porfolio',
       icon: Globe,
     },

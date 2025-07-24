@@ -486,3 +486,83 @@ h1, h2, h3, h4, h5, h6 {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary);
 }
+
+/* ===== NAVBAR STYLES ===== */
+.navbar {
+  @apply fixed top-0 left-0 right-0 z-50 bg-white dark:bg-slate-900 border-b border-gray-200 dark:border-gray-700 shadow-lg;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.navbar-container {
+  @apply max-w-6xl mx-auto px-4 py-4 flex items-center justify-between;
+}
+
+.navbar-logo {
+  @apply flex items-center;
+}
+
+.navbar-logo-text {
+  @apply text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
+}
+
+.navbar-links {
+  @apply flex items-center space-x-8;
+}
+
+.navbar-link {
+  @apply px-4 py-2 text-gray-700 dark:text-gray-300 font-medium rounded-lg transition-all duration-300 relative;
+}
+
+.navbar-link:hover {
+  @apply text-gray-900 dark:text-white;
+}
+
+.navbar-link-active {
+  @apply text-white font-semibold;
+  background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.navbar-link-active:hover {
+  @apply text-white;
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+}
+
+/* Ajuste para secciones con navbar fijo */
+.section-with-navbar {
+  @apply pt-20;
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+  .navbar-container {
+    @apply px-4 py-3;
+  }
+  
+  .navbar-links {
+    @apply space-x-4;
+  }
+  
+  .navbar-link {
+    @apply px-3 py-2 text-sm;
+  }
+  
+  .navbar-logo-text {
+    @apply text-xl;
+  }
+  
+  .section-with-navbar {
+    @apply pt-16;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-links {
+    @apply space-x-2;
+  }
+  
+  .navbar-link {
+    @apply px-2 py-1 text-xs;
+  }
+}

@@ -25,13 +25,13 @@ export default function Projects() {
       icon: Code,
     },
     {
-      title: 'Task Management App',
-      description: 'Aplicación de gestión de tareas con funcionalidades de colaboración en tiempo real, notificaciones y dashboard interactivo.',
-      technologies: ['Angular', 'Firebase', 'TypeScript', 'Material UI'],
-      image: '/task-app-preview.jpg',
-      liveUrl: 'https://task-app-demo.com',
-      githubUrl: 'https://github.com/enrique/task-management',
-      icon: Code,
+      title: 'Portfolio Personal',
+      description: 'Portfolio profesional moderno y atractivo construido con Next.js, React, TailwindCSS y Framer Motion. Incluye diseño responsivo, animaciones suaves y optimización SEO.',
+      technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+      image: '/porfolio.png',
+      liveUrl: '#', // Placeholder hasta tener el link de Vercel
+      githubUrl: 'https://github.com/manterolaenrique/porfolio',
+      icon: Globe,
     },
   ];
 
@@ -49,12 +49,9 @@ export default function Projects() {
             Proyectos Destacados
           </h2>
           <div className="divider-gradient-large"></div>
-          <p className="text-body-medium max-w-2xl mx-auto mb-16">
-            Una muestra de mis proyectos más recientes y destacados
-          </p>
         </motion.div>
 
-        <div className="grid-3-cols mb-32">
+        <div className="grid-3-cols mb-16">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
@@ -154,7 +151,7 @@ export default function Projects() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 1.2 }}
           viewport={{ once: true, margin: "-100px" }}
-          className="text-center mt-32"
+          className="text-center relative top-8"
         >
           <a
             href="https://github.com/manterolaenrique"

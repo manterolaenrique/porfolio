@@ -1,7 +1,14 @@
+'use client';
+
 import Link from 'next/link';
 import { Home, ArrowLeft } from 'lucide-react';
+import { useCallback } from 'react';
 
 export default function NotFound() {
+  const handleGoBack = useCallback(() => {
+    window.history.back();
+  }, []);
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-indigo-50 dark:from-slate-900 dark:via-slate-800 dark:to-blue-900">
       <div className="text-center px-4">
@@ -25,7 +32,8 @@ export default function NotFound() {
           </Link>
           
           <button
-            onClick={() => window.history.back()}
+            onClick={handleGoBack}
+            type="button"
             className="flex items-center gap-2 px-6 py-3 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg font-medium hover:border-blue-600 hover:text-blue-600 dark:hover:border-blue-400 dark:hover:text-blue-400 transition-all duration-300"
           >
             <ArrowLeft size={20} />

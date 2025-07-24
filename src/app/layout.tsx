@@ -21,6 +21,11 @@ export const metadata: Metadata = {
   keywords: ["Full Stack Developer", "React", "Angular", "Node.js", "TypeScript", "JavaScript"],
   authors: [{ name: "Enrique Manterola" }],
   creator: "Enrique Manterola",
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
   openGraph: {
     title: "Enrique Manterola - Full Stack Developer",
     description: "Desarrollador Full Stack apasionado por crear soluciones digitales eficientes y escalables.",

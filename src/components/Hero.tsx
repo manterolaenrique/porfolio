@@ -3,24 +3,24 @@
 import { motion } from 'framer-motion';
 import { Mail, Download, Linkedin, Github } from 'lucide-react';
 import Image from 'next/image';
+import { useCallback } from 'react';
 
 export default function Hero() {
-  const handleEmailClick = () => {
+  const handleEmailClick = useCallback(() => {
     window.location.href = 'mailto:enrique.manterola@email.com';
-  };
+  }, []);
 
-  const handleDownloadCV = () => {
-    // Link al CV real
+  const handleDownloadCV = useCallback(() => {
     window.open('/CV - Manterola Enrique.pdf', '_blank');
-  };
+  }, []);
 
-  const handleLinkedInClick = () => {
+  const handleLinkedInClick = useCallback(() => {
     window.open('https://www.linkedin.com/in/enrique-manterola-8bb572189/', '_blank');
-  };
+  }, []);
 
-  const handleGitHubClick = () => {
+  const handleGitHubClick = useCallback(() => {
     window.open('https://github.com/manterolaenrique', '_blank');
-  };
+  }, []);
 
   return (
     <section className="min-h-screen flex-center px-4 py-16 relative overflow-hidden">
@@ -88,6 +88,7 @@ export default function Hero() {
                 <button
                   onClick={handleEmailClick}
                   className="btn-primary btn-md btn-width-lg"
+                  type="button"
                 >
                   <Mail size={18} />
                   Enviar mensaje
@@ -96,6 +97,7 @@ export default function Hero() {
                 <button
                   onClick={handleDownloadCV}
                   className="btn-secondary btn-md btn-width-lg"
+                  type="button"
                 >
                   <Download size={18} />
                   Descargar CV
@@ -114,6 +116,7 @@ export default function Hero() {
                 <button
                   onClick={handleLinkedInClick}
                   className="btn-linkedin btn-md btn-width-md"
+                  type="button"
                 >
                   <Linkedin size={18} />
                   LinkedIn
@@ -122,6 +125,7 @@ export default function Hero() {
                 <button
                   onClick={handleGitHubClick}
                   className="btn-github btn-md btn-width-md"
+                  type="button"
                 >
                   <Github size={18} />
                   GitHub

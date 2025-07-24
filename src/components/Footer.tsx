@@ -9,12 +9,12 @@ export default function Footer() {
   const socialLinks = [
     {
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/enrique-manterola',
+      url: 'https://www.linkedin.com/in/enrique-manterola-8bb572189/',
       icon: Linkedin,
     },
     {
       name: 'GitHub',
-      url: 'https://github.com/enrique-manterola',
+      url: 'https://github.com/manterolaenrique',
       icon: Github,
     },
     {

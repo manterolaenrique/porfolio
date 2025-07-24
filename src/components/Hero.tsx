@@ -152,9 +152,10 @@ export default function Hero() {
                   src="/_ODH0307.jpg"
                   alt="Enrique Manterola - Full Stack Developer"
                   fill
-                  className="object-cover"
+                  className="object-cover object-center"
+                  style={{ objectPosition: 'center -5%', transform: 'scale(1.30)'  }}
                   priority
-                  sizes="(max-width: 768px) 320px, 384px"
+                  sizes="(max-width: 768px) 384px, 448px"
                 />
                 
                 {/* Efecto de glow */}

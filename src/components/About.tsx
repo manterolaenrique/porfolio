@@ -38,20 +38,20 @@ export default function About() {
             className="space-y-large lg:col-span-3"
           >
             <p className="text-body-large">
-             Soy Enrique Manterola y soy un apasionado de la resolución de problemas y me mantengo actualizado con las últimas tendencias y tecnologías en el campo del desarrollo full stack.
-             Estoy comprometido con la entrega de soluciones de alta calidad, escalables y seguras, y disfruto trabajando en proyectos desafiantes que me permitan seguir 
-             creciendo profesionalmente.
+            Soy Enrique Manterola, un apasionado de la resolución de problemas, me mantengo actualizado con las últimas tendencias y tecnologías en el campo del desarrollo full stack. 
+            Estoy comprometido con la entrega de soluciones de alta calidad, escalables, seguras y disfruto trabajando en proyectos desafiantes que me permitan seguir creciendo 
+            profesionalmente.
             </p>
             
             <p className="text-body-large">
-             En el lado del cliente, tengo experiencia en el uso de frameworks y librerías populares como Angular para desarrollar aplicaciones modernas con una excelente 
-             experiencia de usuario.
+            En el lado del cliente, tengo experiencia en el uso de frameworks y librerías populares como Angular, React para desarrollar aplicaciones modernas con una excelente 
+            experiencia de usuario.
             </p>
             <p className="text-body-large">
-            En cuanto al lado del servidor, tengo experiencia en el desarrollo de APIs y servicios web utilizando tecnologías como Node.js, NestJS, Express, entre otras. También tengo conocimientos sólidos en 
-            bases de datos relacionales y no relacionales, como MySQL, PostgreSQL, MongoDB, DynamoDB, lo que me permite diseñar y gestionar eficientemente la persistencia de datos en mis aplicaciones.
-            Estoy en búsqueda de nuevas oportunidades para integrarme a un equipo de tecnologías de la información en una empresa donde pueda expandir y perfeccionar mis habilidades, 
-            al mismo tiempo que aportar con entusiasmo y compromiso al crecimiento y éxito del equipo.
+            En cuanto al lado del servidor, tengo experiencia en el desarrollo de APIs y servicios web utilizando tecnologías como Node.js, NestJS, Express, entre otras. 
+            También tengo conocimientos sólidos en bases de datos relacionales y no relacionales, como MySQL, PostgreSQL, MongoDB, DynamoDB, lo que me permite diseñar y gestionar 
+            eficientemente la persistencia de datos en mis aplicaciones. Estoy en búsqueda de nuevas oportunidades para integrarme a un equipo de tecnologías de la información en una 
+            empresa donde pueda expandir y perfeccionar mis habilidades, al mismo tiempo que aportar con entusiasmo,compromiso al crecimiento y éxito del equipo.
             </p>
           </motion.div>
 

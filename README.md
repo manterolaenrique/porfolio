@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Personal - Enrique Manterola
 
-## Getting Started
+Un portfolio profesional moderno y atractivo construido con Next.js, React, TailwindCSS y Framer Motion.
 
-First, run the development server:
+## 🚀 Características
 
+- **Diseño Moderno**: Interfaz limpia y profesional con animaciones suaves
+- **Totalmente Responsivo**: Optimizado para móviles, tablets y desktop
+- **Animaciones**: Transiciones fluidas con Framer Motion
+- **SEO Optimizado**: Meta tags, robots.txt y sitemap.xml incluidos
+- **Modo Oscuro**: Soporte automático para preferencias del sistema
+- **Accesible**: Estructura semántica y etiquetas alt apropiadas
+
+## 🛠️ Tecnologías Utilizadas
+
+- **Next.js 15** - Framework de React
+- **React 18** - Biblioteca de UI
+- **TypeScript** - Tipado estático
+- **TailwindCSS** - Framework de CSS
+- **Framer Motion** - Animaciones
+- **Lucide React** - Iconos
+- **Vercel** - Deploy y hosting
+
+## 📦 Instalación
+
+1. Clona el repositorio:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/enrique-manterola/portfolio.git
+cd portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instala las dependencias:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Ejecuta el servidor de desarrollo:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-## Learn More
+## 🚀 Deploy en Vercel
 
-To learn more about Next.js, take a look at the following resources:
+1. Conecta tu repositorio a Vercel
+2. Vercel detectará automáticamente que es un proyecto Next.js
+3. El deploy se realizará automáticamente en cada push
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+O usa el CLI de Vercel:
+```bash
+npm install -g vercel
+vercel --prod
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Estructura del Proyecto
 
-## Deploy on Vercel
+```
+src/
+├── app/
+│   ├── layout.tsx      # Layout principal con metadata SEO
+│   ├── page.tsx        # Página principal
+│   └── globals.css     # Estilos globales
+└── components/
+    ├── Hero.tsx        # Sección principal con foto y presentación
+    ├── About.tsx       # Sección "Sobre mí"
+    ├── Projects.tsx    # Proyectos destacados
+    ├── Contact.tsx     # Enlaces de contacto
+    └── Footer.tsx      # Pie de página
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎨 Personalización
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Información Personal
+Edita los siguientes archivos para personalizar tu información:
+
+- `src/app/layout.tsx` - Metadata SEO y título
+- `src/components/Hero.tsx` - Nombre, cargo y descripción
+- `src/components/About.tsx` - Biografía y estadísticas
+- `src/components/Projects.tsx` - Proyectos y enlaces
+- `src/components/Contact.tsx` - Enlaces sociales
+
+### Foto de Perfil
+Reemplaza el placeholder en `Hero.tsx` con tu foto real:
+```tsx
+<Image
+  src="/tu-foto.jpg"
+  alt="Enrique Manterola"
+  width={400}
+  height={400}
+  className="rounded-full"
+/>
+```
+
+### Colores y Estilos
+Modifica las variables CSS en `src/app/globals.css` para cambiar la paleta de colores.
+
+## 📱 Responsive Design
+
+El portfolio está optimizado para:
+- **Móviles**: 320px - 768px
+- **Tablets**: 768px - 1024px
+- **Desktop**: 1024px+
+
+## 🔧 Scripts Disponibles
+
+- `npm run dev` - Servidor de desarrollo
+- `npm run build` - Build de producción
+- `npm run start` - Servidor de producción
+- `npm run lint` - Linting con ESLint
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
+
+## 🤝 Contribuciones
+
+Las contribuciones son bienvenidas. Por favor, abre un issue o pull request.
+
+## 📞 Contacto
+
+- **Email**: enrique.manterola@email.com
+- **LinkedIn**: [linkedin.com/in/enrique-manterola](https://linkedin.com/in/enrique-manterola)
+- **GitHub**: [github.com/enrique-manterola](https://github.com/enrique-manterola)
+
+---
+
+Hecho con ❤️ por Enrique Manterola

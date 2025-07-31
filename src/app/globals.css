@@ -380,6 +380,55 @@ h1, h2, h3, h4, h5, h6 {
   @apply p-8;
 }
 
+/* ===== ESTILOS PARA POPUP DE PROYECTOS ===== */
+.project-popup-overlay {
+  @apply fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-6;
+}
+
+.project-popup-content {
+  @apply bg-white dark:bg-slate-900 rounded-2xl shadow-2xl max-w-3xl w-full max-h-[90vh] overflow-hidden;
+}
+
+/* Responsive para popup */
+@media (max-width: 768px) {
+  .project-popup-overlay {
+    @apply p-4;
+  }
+  
+  .project-popup-content {
+    @apply max-w-full mx-2 max-h-[95vh];
+  }
+}
+
+/* Animaciones para hover en móvil */
+@media (hover: none) {
+  .project-card-hover {
+    @apply active:scale-95;
+  }
+}
+
+/* Mejoras para el popup */
+.project-popup-overlay {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Asegurar que el popup esté por encima de todo */
+.project-popup-content {
+  z-index: 60;
+}
+
+/* Mejorar espaciado del popup */
+.project-popup-content .p-8 {
+  @apply p-8;
+}
+
+/* Ajustar títulos en las tarjetas */
+.card-content h3 {
+  @apply text-lg font-bold text-gray-900 dark:text-white mb-3;
+  line-height: 1.3;
+}
+
 /* ===== CLASES DE TECNOLOGÍAS ===== */
 .tech-tag {
   @apply px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full font-medium;
